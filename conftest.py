@@ -1,7 +1,6 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-import time
 
 
 def pytest_addoption(parser):
@@ -15,8 +14,6 @@ def browser(request):
     options = Options()
     options.add_experimental_option('prefs', {'intl.accept_languages': browser_language})
     browser = webdriver.Chrome(options=options)
-
     browser.implicitly_wait(5)
     yield browser
-    time.sleep(10)
     browser.quit()
