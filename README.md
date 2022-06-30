@@ -1,2 +1,2 @@
 # AutoTest_project
-Тестовый проект
+Проект для тестирования сайта http://selenium1py.pythonanywhere.com/
